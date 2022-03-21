@@ -1,0 +1,270 @@
+fileFormatVersion: 2
+guid: c244ee2a04908654fafd2116fdddb924
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2686197342283405998
+    second: Explosion_deces_0
+  - first:
+      213: 8129178326269793779
+    second: Explosion_deces_1
+  - first:
+      213: 4304990807769535267
+    second: Explosion_deces_2
+  - first:
+      213: -8428633019346740182
+    second: Explosion_deces_3
+  - first:
+      213: 4618294782164469572
+    second: Explosion_deces_4
+  - first:
+      213: 8646241689338890036
+    second: Explosion_deces_5
+  - first:
+      213: -5534106743880940136
+    second: Explosion_deces_6
+  - first:
+      213: 8121099180322955363
+    second: Explosion_deces_7
+  - first:
+      213: -7437849256295801060
+    second: Explosion_deces_8
+  - first:
+      213: -4514928145896382862
+    second: Explosion_deces_9
+  - first:
+      213: -8666762998685207904
+    second: Explosion_deces_10
+  - first:
+      213: 2280636437696595870
+    second: Explosion_deces_11
+  - first:
+      213: -8457841203945089274
+    second: Explosion_deces_12
+  - first:
+      213: 7426849531713313541
+    second: Explosion_deces_13
+  - first:
+      213: -4797277066290028017
+    second: Explosion_deces_14
+  - first:
+      213: 8731406089027984401
+    second: Explosion_deces_15
+  - first:
+      213: 6160609268974553326
+    second: Explosion_deces_16
+  - first:
+      213: -4240457095396729989
+    second: Explosion_deces_17
+  - first:
+      213: -1062473798960191148
+    second: Explosion_deces_18
+  - first:
+      213: 8202611889812156286
+    second: Explosion_deces_19
+  - first:
+      213: -2295160914698128746
+    second: Explosion_deces_20
+  - first:
+      213: -3477421606280377909
+    second: Explosion_deces_21
+  - first:
+      213: -5539268405816051683
+    second: Explosion_deces_22
+  - first:
+      213: 7589518267144134320
+    second: Explosion_deces_23
+  - first:
+      213: -5908838822022452094
+    second: Explosion_deces_24
+  - first:
+      213: -8608085256680358579
+    second: Explosion_deces_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Explosion_deces_0
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1440
+        width: 288
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2556990dfb5b8bad0800000000000000
+      internalID: -2686197342283405998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_deces_1
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1344
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f59d151e94a0d070800000000000000
+      internalID: 8129178326269793779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_deces_2
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 313
+        width: 491
+        height: 487
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323dc62b4566ebb30800000000000000
+      internalID: 4304990807769535267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Explosion_deces_10
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 354
+        width: 452
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a27ede98f879b780800000000000000
+      internalID: -8666762998685207904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
