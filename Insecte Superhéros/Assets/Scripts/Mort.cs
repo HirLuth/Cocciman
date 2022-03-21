@@ -8,9 +8,10 @@ public class Mort : MonoBehaviour
     public ScoreManager scoreManager;
     public GestionEnnemis gestion;
     public int points = 10;
-    public Animator anim;
     public GameObject explosion;
     public MenuManager win;
+    public Vie hit;
+    public PlayerMovement playerHit;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -26,11 +27,21 @@ public class Mort : MonoBehaviour
             scoreManager.AddPoint(points);
             explosion = Instantiate(explosion, transform.position, Quaternion.identity);
         }
-        if(gestion.compteurMouches >= 21)
+        else if (collision.transform.CompareTag("player"))
+        {
+            Destroy(gameObject);
+            playerHit.invincible.enabled = false;
+            Destroy(collision.gameObject);
+            
+            hit.ReduceVie();
+            explosion = Instantiate(explosion, transform.position, Quaternion.identity);
+            
+        }
+        /*if(gestion.compteurMouches >= 21)
         {
             Debug.Log("ILS SONT TOUS MORTS");
             win.Win();
-        }
+        }*/
     }
 }
 

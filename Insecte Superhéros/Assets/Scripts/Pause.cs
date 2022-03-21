@@ -7,7 +7,7 @@ public class Pause : MonoBehaviour
     // Bouton reprendre, hesites pas à ajouter des trucs qui apparaitraint quand on met pause
     public GameObject pauseText;
 
-    public bool terrainAvance;
+    public bool terrainAvance = false;
 
     private void Start()
     {

@@ -8,9 +8,10 @@ using UnityEngine.WSA;
 
 public class Vie : MonoBehaviour
 {
-    public int vie;
+    public int vie = 1;
     public TextMeshProUGUI vieText;
     public int startVie = 1;
+    public Pause pause;
 
     public Animation animTakeHit;
     public Animation animDeathCocciman;
@@ -34,6 +35,11 @@ public class Vie : MonoBehaviour
         {
             RefreshTextVie();
         }
+
+        if (vie == 0)
+        {
+            GameOver();
+        }
     }
     
     private void OnCollisionEnter(Collision other)
@@ -54,10 +60,12 @@ public class Vie : MonoBehaviour
         vie += 1;
         if (vie > 99)
         {
+            vieText.text = "99+";
             Debug.Log("Vie +1 à 99+ (" + vie + ")");
         }
         else
         {
+            vieText.text = "" + vie;
             Debug.Log("Vie +1");
         }
     }
@@ -67,16 +75,19 @@ public class Vie : MonoBehaviour
         vie -= 1;
         if (vie > 99)
         {
+            vieText.text = "99+";
             Debug.Log("Vie -1 à 99+ (" + vie + ")");
         }
         else
         {
+            vieText.text = "" + vie;
             Debug.Log("Vie -1");
         }
     }
 
     public void GameOver()
     {
+        pause.terrainAvance = false;
         animDeathCocciman.Play();
             audioDeathCocciman.Play();
             menuManager.Lose();
