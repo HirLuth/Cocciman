@@ -98,11 +98,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ac93e55fc6a1a84ebbe308ceca54130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  compteurDeclenchement: -1
+  compteurDeclenchement: 26
   vie: 10
   speed: 3.5
-  hauteurMax: 7.5
-  hauteurMin: 1
+  hauteurMax: 7
+  hauteurMin: 1.5
   frequenceAttaques: 1
   pausesEntreAttaques: 0.4
   cadenceDeTir: 0.2
