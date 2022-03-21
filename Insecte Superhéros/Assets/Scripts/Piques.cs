@@ -20,6 +20,12 @@ public class Piques : MonoBehaviour
         Debug.Log("hit");
         //Là faudrait faire appelle à une fonction dans les ennemis qui lancent l'animation d'explosion
     }
+    
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        Destroy(other.gameObject);
+        //Là faudrait faire appelle à une fonction dans les ennemis qui lancent l'animation d'explosion
+    }
 
     // Update is called once per frame
     void Update()
