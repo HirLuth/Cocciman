@@ -13,7 +13,9 @@ public class PlayerMovement : MonoBehaviour
     public bool shoot;
     public Gun gun;
     public BoxCollider2D invincible;
-    public SpriteRenderer clignote;
+    public Animator anim;
+    public float invincibilityTime;
+    public bool isInvincible = false;
 
     //public Transform playerPosition;
     void Start()
@@ -32,7 +34,18 @@ public class PlayerMovement : MonoBehaviour
             shoot = false;
             gun.Shoot();
         } 
-        
+        if (invincibilityTime > 0.1 && isInvincible) 
+        {
+            invincible.enabled = false;
+            anim.SetBool("invincible", true);
+            invincibilityTime = invincibilityTime - 0.1f;
+        }
+        else
+        {
+            invincible.enabled = true;
+            anim.SetBool("invincible", false);
+            isInvincible = false;
+        }
 
     }
     void Move()
@@ -59,14 +72,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void Invincibility()
     {
-        invincible.enabled = false;
-        StartCoroutine(InvincibleTime());
+        isInvincible = true;
     }
-
-    IEnumerator InvincibleTime()
-    {
-        yield return new WaitForSeconds(1f);
-        invincible.enabled = true;
-    }
-
 }

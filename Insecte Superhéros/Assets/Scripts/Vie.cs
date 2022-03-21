@@ -14,9 +14,6 @@ public class Vie : MonoBehaviour
     public Pause pause;
 
     public Animation animTakeHit;
-    public Animation animDeathCocciman;
-
-    public AudioSource audioDeathCocciman;
 
     public MenuManager menuManager;
 
@@ -88,8 +85,6 @@ public class Vie : MonoBehaviour
     public void GameOver()
     {
         pause.terrainAvance = false;
-        animDeathCocciman.Play();
-            audioDeathCocciman.Play();
-            menuManager.Lose();
+        menuManager.Lose();
     }
 }

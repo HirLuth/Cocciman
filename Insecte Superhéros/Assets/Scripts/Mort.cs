@@ -30,7 +30,8 @@ public class Mort : MonoBehaviour
         else if (collision.transform.CompareTag("player"))
         {
             Destroy(gameObject);
-            Destroy(collision.gameObject);
+            playerHit.invincibilityTime = 50f;
+            playerHit.Invincibility();
             
             hit.ReduceVie();
             explosion = Instantiate(explosion, transform.position, Quaternion.identity);
