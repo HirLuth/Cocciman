@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 7058586461021760946}
   - component: {fileID: 7058586461021760904}
   - component: {fileID: 7058586461021760949}
+  - component: {fileID: 797271517}
+  - component: {fileID: 797271520}
+  - component: {fileID: 797271521}
   m_Layer: 6
   m_Name: PlayerBody
   m_TagString: player
@@ -25,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7058586461021760947}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.92, y: 0.5, z: 0}
   m_LocalScale: {x: -0.137466, y: 0.137466, z: 0.091644}
   m_Children:
@@ -103,6 +106,72 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &797271517
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7058586461021760947}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.14814591, y: 0.027777195}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.68, y: 6.08}
+    newSize: {x: 0.62, y: 0.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.791116, y: 4.024457}
+  m_EdgeRadius: 0
+--- !u!114 &797271520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7058586461021760947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3053046048b2c4f8dfad1afbf40ae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beginPosition: {x: -6, y: 4, z: 0}
+  speed: 5
+  hit: {fileID: 0}
+  mm: {fileID: 0}
+  shoot: 0
+  gun: {fileID: 7058586461249790837}
+  invincible: {fileID: 0}
+  clignote: {fileID: 0}
+--- !u!114 &797271521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7058586461021760947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b504232481afa444cb42174606e3c77c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vie: 3
+  vieText: {fileID: 0}
+  startVie: 1
+  pause: {fileID: 0}
+  animTakeHit: {fileID: 0}
+  animDeathCocciman: {fileID: 0}
+  audioDeathCocciman: {fileID: 0}
+  menuManager: {fileID: 0}
 --- !u!1 &7058586461249790835
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,7 +182,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7058586461249790834}
   - component: {fileID: 7058586461249790837}
-  - component: {fileID: 7058586461249790836}
   m_Layer: 0
   m_Name: gun
   m_TagString: player
@@ -148,29 +216,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullets: {fileID: 2000657699304493190, guid: be228ca56402af443980bb446a984f08, type: 3}
---- !u!61 &7058586461249790836
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7058586461249790835}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
