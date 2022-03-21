@@ -17,7 +17,6 @@ public class Piques : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         Destroy(gameObject, 8);
-        Debug.Log("hit");
         //Là faudrait faire appelle à une fonction dans les ennemis qui lancent l'animation d'explosion
     }
 
