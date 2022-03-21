@@ -16,8 +16,10 @@ public class Bullets : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Destroy(other.gameObject);
-        Debug.Log("hit");
+        if (other.gameObject.tag != "Boss")
+        {
+            Destroy(other.gameObject);
+        }
         //Là faudrait faire appelle à une fonction dans les ennemis qui lancent l'animation d'explosion
     }
 
