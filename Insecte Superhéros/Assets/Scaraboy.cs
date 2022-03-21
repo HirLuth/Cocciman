@@ -74,19 +74,28 @@ public class Scaraboy : MonoBehaviour
             if (numeroAttaque == 0 && timerInterne > cadenceDeTir)
             {
                 timerInterne = 0;
-                Instantiate(bullets, transform.position + new Vector3(-1, 0, 0), Quaternion.identity);
+                Instantiate(bullets, transform.position + new Vector3(-1, 0, 0), Quaternion.Euler(0, 0, 180));
             }
             
             else if (numeroAttaque == 1 && timerInterne > cadenceDeTir)
             {
-                timerInterne = 0;
-                Instantiate(bullets, transform.position + new Vector3(-1, 0, 0), Quaternion.identity);
+                timerInterne = -0.2f;
+                Instantiate(bullets, transform.position + new Vector3(-1, 0, 0), Quaternion.Euler(0, 0, 200));
+                Instantiate(bullets, transform.position + new Vector3(-1, 0, 0), Quaternion.Euler(0, 0, 180));
+                Instantiate(bullets, transform.position + new Vector3(-1, 0, 0), Quaternion.Euler(0, 0, 160));
             }
             
-            else if (numeroAttaque == 2 && timerInterne > cadenceDeTir)
+            else if (numeroAttaque == 2)
             {
                 timerInterne = 0;
-                Instantiate(bullets, transform.position + new Vector3(-1, 0, 0), Quaternion.identity);
+                float hauteur = UnityEngine.Random.Range(-0.1f, 0.1f);
+                Instantiate(bullets, transform.position + new Vector3(-1, hauteur, 0), Quaternion.Euler(0, 0, 180));
+                hauteur = UnityEngine.Random.Range(-0.1f, 0.1f);
+                Instantiate(bullets, transform.position + new Vector3(-1, hauteur, 0), Quaternion.Euler(0, 0, 180));
+                hauteur = UnityEngine.Random.Range(-0.1f, 0.1f);
+                Instantiate(bullets, transform.position + new Vector3(-1, hauteur, 0), Quaternion.Euler(0, 0, 180));
+                hauteur = UnityEngine.Random.Range(-0.1f, 0.1f);
+                Instantiate(bullets, transform.position + new Vector3(-1, hauteur, 0), Quaternion.Euler(0, 0, 180));
             }
         }
         
