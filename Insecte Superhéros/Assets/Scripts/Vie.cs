@@ -22,7 +22,7 @@ public class Vie : MonoBehaviour
 
     void Start()
     {
-        vieText.text = "" + startVie;
+        //vieText.text = "" + startVie;
     }
 
     void Update()
@@ -52,7 +52,7 @@ public class Vie : MonoBehaviour
 
     void RefreshTextVie()
     {
-        vieText.text = "" + vie;
+        //vieText.text = "" + vie;
     }
 
     public void AddVie()

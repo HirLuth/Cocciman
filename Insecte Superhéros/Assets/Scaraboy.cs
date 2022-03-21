@@ -28,12 +28,16 @@ public class Scaraboy : MonoBehaviour
     public Rigidbody2D rb;
     public GestionEnnemis gestion;
     public GameObject bullets;
+    public float compteurBoss = 0;
 
 
     private void Update()
     {
-        Movements();
-        Shoot();
+        if (gestion.compteurMouches > compteurDeclenchement)
+        {
+            Movements();
+            Shoot();
+        }
     }
 
     void Movements()

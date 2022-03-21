@@ -254,30 +254,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1351295935 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1113651348517370511, guid: 91e3ece50edb3fb44a1a7393880269f0, type: 3}
-  m_PrefabInstance: {fileID: 1113651349035865935}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1351295941
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351295935}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 04b2c21e432397b4889954f59af29f5b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1430231905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -285,6 +261,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 797271517, guid: 1f812567a9c330243a8fe25d6b3a8b3b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7058586461021760946, guid: 1f812567a9c330243a8fe25d6b3a8b3b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -463,37 +443,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1113651348517370508, guid: 91e3ece50edb3fb44a1a7393880269f0, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-    - target: {fileID: 1113651348517370509, guid: 91e3ece50edb3fb44a1a7393880269f0, type: 3}
-      propertyPath: bullets
-      value: 
-      objectReference: {fileID: 6186706591945092833, guid: f7136e046850ce84a9eccb9bed18f043, type: 3}
     - target: {fileID: 1113651348517370509, guid: 91e3ece50edb3fb44a1a7393880269f0, type: 3}
       propertyPath: gestion
       value: 
       objectReference: {fileID: 1232286400}
     - target: {fileID: 1113651348517370509, guid: 91e3ece50edb3fb44a1a7393880269f0, type: 3}
-      propertyPath: cadenceDeTir
-      value: 0.2
+      propertyPath: compteurBoss
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1113651348517370509, guid: 91e3ece50edb3fb44a1a7393880269f0, type: 3}
-      propertyPath: frequenceAttaques
-      value: 1
+    - target: {fileID: 1113651348517370510, guid: 91e3ece50edb3fb44a1a7393880269f0, type: 3}
+      propertyPath: m_Mass
+      value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 1113651348517370509, guid: 91e3ece50edb3fb44a1a7393880269f0, type: 3}
-      propertyPath: pausesEntreAttaques
-      value: 0.4
+    - target: {fileID: 1113651348517370510, guid: 91e3ece50edb3fb44a1a7393880269f0, type: 3}
+      propertyPath: m_BodyType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1113651348517370511, guid: 91e3ece50edb3fb44a1a7393880269f0, type: 3}
       propertyPath: m_Name
       value: DarkSk4r4b0xxiAHAHA
-      objectReference: {fileID: 0}
-    - target: {fileID: 1113651348517370511, guid: 91e3ece50edb3fb44a1a7393880269f0, type: 3}
-      propertyPath: m_TagString
-      value: Boss
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91e3ece50edb3fb44a1a7393880269f0, type: 3}
