@@ -85,16 +85,10 @@ public class Scaraboy : MonoBehaviour
                 Instantiate(bullets, transform.position + new Vector3(-1, -0.4f, 0), Quaternion.Euler(0, 0, 160));
             }
             
-            else if (numeroAttaque == 2)
+            else if (numeroAttaque == 2 && timerInterne > 0.06f)
             {
                 timerInterne = 0;
-                float hauteur = UnityEngine.Random.Range(-0.1f, 0.1f);
-                Instantiate(bullets, transform.position + new Vector3(-1, hauteur -0.4f, 0), Quaternion.Euler(0, 0, 180));
-                hauteur = UnityEngine.Random.Range(-0.1f, 0.1f);
-                Instantiate(bullets, transform.position + new Vector3(-1, hauteur -0.4f, 0), Quaternion.Euler(0, 0, 180));
-                hauteur = UnityEngine.Random.Range(-0.1f, 0.1f);
-                Instantiate(bullets, transform.position + new Vector3(-1, hauteur -0.4f, 0), Quaternion.Euler(0, 0, 180));
-                hauteur = UnityEngine.Random.Range(-0.1f, 0.1f);
+                float hauteur = UnityEngine.Random.Range(-0.2f, 0.2f);
                 Instantiate(bullets, transform.position + new Vector3(-1, hauteur -0.4f, 0), Quaternion.Euler(0, 0, 180));
             }
         }

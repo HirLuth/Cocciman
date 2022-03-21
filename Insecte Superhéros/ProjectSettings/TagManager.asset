@@ -8,6 +8,7 @@ TagManager:
   - bullet
   - mouche
   - player
+  - Boss
   layers:
   - Default
   - TransparentFX
