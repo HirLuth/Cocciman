@@ -7,6 +7,7 @@ public class Bullets : MonoBehaviour
     public Vector2 direction = new Vector2(1, 0);
     public float speed = 2;
     public Vector2 velocity;
+    public Scaraboy scaraboy;
 
     // Start is called before the first frame update
     void Start()
@@ -16,9 +17,16 @@ public class Bullets : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Destroy(other.gameObject);
-        Debug.Log("hit");
-        //Là faudrait faire appelle à une fonction dans les ennemis qui lancent l'animation d'explosion
+        Debug.Log(scaraboy.compteurBoss);
+        if (other.gameObject.tag != "Boss" || scaraboy.compteurBoss > 15)
+        {
+            Destroy(other.gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            scaraboy.compteurBoss += 1;
+        }
     }
 
     // Update is called once per frame

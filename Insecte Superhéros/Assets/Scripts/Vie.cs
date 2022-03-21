@@ -14,15 +14,12 @@ public class Vie : MonoBehaviour
     public Pause pause;
 
     public Animation animTakeHit;
-    public Animation animDeathCocciman;
-
-    public AudioSource audioDeathCocciman;
 
     public MenuManager menuManager;
 
     void Start()
     {
-        vieText.text = "" + startVie;
+        //vieText.text = "" + startVie;
     }
 
     void Update()
@@ -52,7 +49,7 @@ public class Vie : MonoBehaviour
 
     void RefreshTextVie()
     {
-        vieText.text = "" + vie;
+        //vieText.text = "" + vie;
     }
 
     public void AddVie()
@@ -88,8 +85,6 @@ public class Vie : MonoBehaviour
     public void GameOver()
     {
         pause.terrainAvance = false;
-        animDeathCocciman.Play();
-            audioDeathCocciman.Play();
-            menuManager.Lose();
+        menuManager.Lose();
     }
 }
