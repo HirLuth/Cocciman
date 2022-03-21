@@ -30,7 +30,6 @@ public class Mort : MonoBehaviour
         else if (collision.transform.CompareTag("player"))
         {
             Destroy(gameObject);
-            playerHit.invincible.enabled = false;
             Destroy(collision.gameObject);
             
             hit.ReduceVie();
