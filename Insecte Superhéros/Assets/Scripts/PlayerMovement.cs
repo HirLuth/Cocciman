@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Audio;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -55,6 +56,17 @@ public class PlayerMovement : MonoBehaviour
             transform.Translate(Vector3.left * speed * Time.deltaTime);
         }  
     }
-    
+
+    public void Invincibility()
+    {
+        invincible.enabled = false;
+        StartCoroutine(InvincibleTime());
+    }
+
+    IEnumerator InvincibleTime()
+    {
+        yield return new WaitForSeconds(1f);
+        invincible.enabled = true;
+    }
 
 }
