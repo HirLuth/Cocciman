@@ -7,10 +7,12 @@ public class PlayerMovement : MonoBehaviour
 {
     public Vector3 beginPosition = new Vector3(0, 0, 0);
     public float speed = 5.0f;
-    public Animation anim;
-    public bool pauseGame = false;
     public Vie hit;
     public MenuManager mm;
+    public bool shoot;
+    public Gun gun;
+    public BoxCollider2D invincible;
+    public SpriteRenderer clignote;
 
     //public Transform playerPosition;
     void Start()
@@ -20,8 +22,16 @@ public class PlayerMovement : MonoBehaviour
     
     void Update()
     {
-        GamePaused();
+        //GamePaused();
         Move();
+        shoot = Input.GetKeyDown(KeyCode.Space);
+
+        if (shoot)
+        {
+            shoot = false;
+            gun.Shoot();
+        } 
+        
 
     }
     void Move()
@@ -45,31 +55,6 @@ public class PlayerMovement : MonoBehaviour
             transform.Translate(Vector3.left * speed * Time.deltaTime);
         }  
     }
-    void GamePaused()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            pauseGame = true;
-        }
+    
 
-        if (Input.GetKeyUp(KeyCode.P))
-        {
-            pauseGame = false;
-        }
-        if (pauseGame == true)
-        {
-            Time.timeScale = 0;
-        }
-        else
-        {
-            Time.timeScale = 1;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D other)
-    {
-        Debug.Log("aie");
-        hit.GameOver();
-        mm.Lose();
-    }
 }

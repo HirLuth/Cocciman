@@ -14,17 +14,21 @@ public class MenuManager : MonoBehaviour
     public GameObject menuVictoire;
     public GameObject menuDefaite;
     public bool lose;
+    public Pause pause;
 
     public int compteurArthur;
 
     void Start()
     {
-        
+        Stop();        
     }
 
     void Update()
     {
-        Stop();
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            Stop();
+        }
     }
 
     public void Quit()
@@ -40,26 +44,26 @@ public class MenuManager : MonoBehaviour
 
     public void Stop()
     {
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            Time.timeScale = 0;
+        Time.timeScale = 0;
+        pause.terrainAvance = false;
             Debug.Log("ça stop");
             menuPrincipal.SetActive(true);
-        }
     }
 
     public void Win()
     {
 
             Time.timeScale = 0;
+            pause.terrainAvance = false;
             menuVictoire.SetActive(true);
     }
 
     public void Lose()
     {
-        if (lose == true)
+        if (lose)
         {
             Time.timeScale = 0;
+            pause.terrainAvance = false;
             menuDefaite.SetActive(true);
         }
 
